@@ -15,4 +15,7 @@ COPY . .
 EXPOSE 8501
 
 # Run the Streamlit app
-CMD ["streamlit", "run", "ui/streamlit_app.py", "--server.port=9000", "--server.enableCORS=false"]
+# CMD ["streamlit", "run", "ui/streamlit_app.py", "--server.port=9000", "--server.enableCORS=false"]
+
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "9000"]
+
