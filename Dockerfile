@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the port Streamlit uses
-EXPOSE 8501
+EXPOSE 9000
 
 # Run the Streamlit app
 # CMD ["streamlit", "run", "ui/streamlit_app.py", "--server.port=9000", "--server.enableCORS=false"]
