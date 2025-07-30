@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8501
 
 # Run the Streamlit app
-CMD ["streamlit", "run", "ui/streamlit_app.py", "--server.port=8501", "--server.enableCORS=false"]
+CMD ["streamlit", "run", "ui/streamlit_app.py", "--server.port=9000", "--server.enableCORS=false"]
